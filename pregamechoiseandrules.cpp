@@ -5,7 +5,7 @@
 pregamechoiseandrules::pregamechoiseandrules(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::pregamechoiseandrules),
-    gif_movie("D:/OneDrive/Desktop/qt_projects/RPS1/PRS/Rock_Paper_Scissors/gif_RPS.gif")
+    gif_movie("C:\\Qt\\Project\\RPS/gif_RPS.gif.webp")
 
 {
     ui->setupUi(this);

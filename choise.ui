@@ -171,22 +171,5 @@
   </layout>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>ExitButton</sender>
-   <signal>clicked()</signal>
-   <receiver>Choise</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>347</x>
-     <y>358</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>251</x>
-     <y>191</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

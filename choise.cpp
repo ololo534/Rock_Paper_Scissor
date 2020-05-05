@@ -29,6 +29,11 @@ void Choise::on_GoButton_clicked() {
     if ( ui->PaperButton->isChecked() ) {
         personMove = 3;
     }
+     if (personMove < 1 || personMove > 3) {
+         QMessageBox msg(QMessageBox::Critical,"Error","You haven't choisen anithing!" , QMessageBox::Ok, nullptr);
+         msg.exec();
+         goto m1;
+     }
     computerMove = computerMoves.at(i);
     --personMove;
 
@@ -58,7 +63,7 @@ void Choise::on_GoButton_clicked() {
         ++countComputerWins;
         break;
     }
-
+    m1:;
     }
 }
 
@@ -70,4 +75,5 @@ void Choise::on_ExitButton_clicked() {
                     " times\nDraw: " + QString::number(countDraw) + " times",
                     QMessageBox::Ok, nullptr);
     msg.exec();
+
 }
