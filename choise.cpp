@@ -5,6 +5,12 @@
 #include "pregamechoiseandrules.h"
 #include "mainwindow.h"
 
+short player_1Move;
+short player_2Move;
+
+int Player1WinCount;
+int Player2WinCount;
+
 Choise::Choise(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Choise)

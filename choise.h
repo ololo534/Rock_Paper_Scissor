@@ -5,6 +5,11 @@
 #include <QVector>
 #include <QString>
 
+extern short player_1Move;
+extern short player_2Move;
+extern int Player1WinCount;
+extern int Player2WinCount;
+
 namespace Ui {
 class Choise;
 }
@@ -16,18 +21,19 @@ class Choise : public QDialog
 public:
     explicit Choise(QWidget *parent = nullptr);
     ~Choise();
-    size_t countDraw{ 0 };
-    size_t countComputerWins{ 0 };
-    size_t countPlayerWins{ 0 };
+    int countDraw{ 0 };
+    int countComputerWins{ 0 };
+    int countPlayerWins{ 0 };
 
     enum Moves { ROCK, SCISSORS, PAPER };
 
-    QVector<Moves> computerMoves {ROCK, PAPER, SCISSORS};
+    QVector<Moves> computerMoves {ROCK, SCISSORS, PAPER};
 
     QVector<QString> nameMoves{ "Rock", "Scissors", "Paper" };
 
     short personMove{ 0 };
     short computerMove{ 0 };
+
 private slots:
     void on_ExitButton_clicked();
 

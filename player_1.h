@@ -14,7 +14,7 @@ class player_1 : public QDialog
 public:
     explicit player_1(QWidget *parent = nullptr);
     ~player_1();
-    int player_1Move = 0;
+
 private slots:
     void on_NextButton_clicked();
 
