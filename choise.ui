@@ -146,10 +146,10 @@
      <item>
       <widget class="QPushButton" name="ExitButton">
        <property name="text">
-        <string>Exit</string>
+        <string>Back</string>
        </property>
        <property name="autoDefault">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
       </widget>
      </item>

@@ -28,7 +28,6 @@ public:
 
     short personMove{ 0 };
     short computerMove{ 0 };
-
 private slots:
     void on_ExitButton_clicked();
 

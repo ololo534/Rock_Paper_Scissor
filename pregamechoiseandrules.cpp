@@ -1,11 +1,12 @@
 #include "pregamechoiseandrules.h"
 #include "ui_pregamechoiseandrules.h"
 #include "choise.h"
+#include "mainwindow.h"
 
 pregamechoiseandrules::pregamechoiseandrules(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::pregamechoiseandrules),
-    gif_movie("C:\\Qt\\Project\\RPS/gif_RPS.gif.webp")
+    gif_movie("D:\\OneDrive\\Desktop\\qt_projects\\RPS1\\RPS\\Rock_Paper_Scissor/gif_RPS.webp")
 
 {
     ui->setupUi(this);
@@ -19,7 +20,7 @@ pregamechoiseandrules::~pregamechoiseandrules()
     delete ui;
 }
 
-
+//Выход из приложения
 void pregamechoiseandrules::on_pushButton_4_clicked()
 {
     close();

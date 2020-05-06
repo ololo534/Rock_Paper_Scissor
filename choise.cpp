@@ -2,6 +2,8 @@
 #include "ui_choise.h"
 #include "QMessageBox"
 #include <QDebug>
+#include "pregamechoiseandrules.h"
+#include "mainwindow.h"
 
 Choise::Choise(QWidget *parent) :
     QDialog(parent),
@@ -75,5 +77,8 @@ void Choise::on_ExitButton_clicked() {
                     " times\nDraw: " + QString::number(countDraw) + " times",
                     QMessageBox::Ok, nullptr);
     msg.exec();
-
+    //показ предудющей формы
+    this->hide();
+    pregamechoiseandrules *pregame = new pregamechoiseandrules;
+    pregame->show();
 }
