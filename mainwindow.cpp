@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "choise.h"
+#include "pregamechoiseandrules.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -17,5 +18,5 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_startButton_clicked() {
     MainWindow::hide();
-    choise.show();
+    pregame.show();
 }

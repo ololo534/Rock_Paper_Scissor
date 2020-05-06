@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <choise.h>
+#include <pregamechoiseandrules.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,6 +17,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     Choise choise;
+    pregamechoiseandrules pregame;
 private slots:
     void on_startButton_clicked();
 

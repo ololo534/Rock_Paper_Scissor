@@ -18,15 +18,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     choise.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    pregamechoiseandrules.cpp
 
 HEADERS += \
     choise.h \
-    mainwindow.h
+    mainwindow.h \
+    pregamechoiseandrules.h
 
 FORMS += \
     choise.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    pregamechoiseandrules.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
