@@ -6,7 +6,7 @@
 pregamechoiseandrules::pregamechoiseandrules(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::pregamechoiseandrules),
-    gif_movie("D:\\OneDrive\\Desktop\\qt_projects\\RPS1\\RPS\\Rock_Paper_Scissor/gif_RPS.webp")
+    gif_movie(QCoreApplication::applicationDirPath() + "/gif_RPS.webp")
 
 {
     ui->setupUi(this);
@@ -25,9 +25,15 @@ void pregamechoiseandrules::on_pushButton_4_clicked()
 {
     close();
 }
-
+// Игра с компьютером
 void pregamechoiseandrules::on_pushButton_2_clicked()
 {
     pregamechoiseandrules::hide();
     choise.show();
+}
+//Игра вдвоем
+void pregamechoiseandrules::on_pushButton_clicked()
+{
+    pregamechoiseandrules::hide();
+    pl1.show();
 }

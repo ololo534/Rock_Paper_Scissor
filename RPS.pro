@@ -19,16 +19,19 @@ SOURCES += \
     choise.cpp \
     main.cpp \
     mainwindow.cpp \
+    player_1.cpp \
     pregamechoiseandrules.cpp
 
 HEADERS += \
     choise.h \
     mainwindow.h \
+    player_1.h \
     pregamechoiseandrules.h
 
 FORMS += \
     choise.ui \
     mainwindow.ui \
+    player_1.ui \
     pregamechoiseandrules.ui
 
 # Default rules for deployment.
